@@ -23,21 +23,28 @@ jobs:
         with:
           auto-update-conda: true
           environment-file: environment.yml
-          activate-environment: baby_1l_run_3
+          activate-environment: flibe-1l-run-3
 
-      - name: Run neutronics model
+      # - name: Run neutronics model
+      #   shell: bash -l {0}
+      #   working-directory: analysis/neutron
+      #   run: |
+      #     python openmc_model.py
+      #     jupyter-nbconvert --to notebook postprocessing.ipynb --execute
+
+      - name: Run foil analysis
         shell: bash -l {0}
         working-directory: analysis/neutron
         run: |
-          python openmc_model.py
-          jupyter-nbconvert --to notebook postprocessing.ipynb --execute
+          papermill foil_analysis_NaI.ipynb temp.ipynb -p download_from_raw False
+          jupyter-nbconvert --to notebook --execute temp.ipynb
 
-      - name: Run tritium model
-        shell: bash -l {0}
-        working-directory: analysis/tritium
-        run: |
-          python tritium_model.py
-          jupyter-nbconvert --to notebook tritium_model.ipynb --execute
+      # - name: Run tritium model
+      #   shell: bash -l {0}
+      #   working-directory: analysis/tritium
+      #   run: |
+      #     python tritium_model.py
+      #     jupyter-nbconvert --to notebook tritium_model.ipynb --execute
 
       - name: Commit and Push Changes
         run: |
