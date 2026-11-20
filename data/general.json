@@ -174,22 +174,22 @@
         "foils": {
             "enabled": true,
             "position": "on generator, at target plane, facing top and bottom",
-            "data_directory": {"HPGe": "260310_1L_FLiBe_run2/DAQ"},
+            "data_directory": {"NaI": "260729_1L_FLiBe_run4_foils/DAQ"},
             "data_url": null,
-            "detector_type": ["HPGe"],
+            "detector_type": ["NaI"],
             "materials": [
                 {
-                    "position": null,
+                    "position": "under_generator_bottom",
                     "material": "Zr",
-                    "designator": "Zirconium Packet #13",
-                    "irradiation_date": "11/19/2025",
-                    "number_of_foils": 2,
+                    "designator": "Zirconium Packet #10",
+                    "irradiation_date": "7/29/2026",
+                    "number_of_foils": 4,
                     "distance_to_source": {
-                        "value": 5,
+                        "value": 4.5,
                         "unit": "cm"
                     },
                     "mass": {
-                        "value": 0.2227,
+                        "value": 0.4445,
                         "unit": "g"
                     },
                     "mass_err": {
@@ -197,28 +197,57 @@
                         "unit": "g"
                     },
                     "thickness": {
-                        "value": 0.01,
+                        "value": 0.02,
                         "unit": "inch"
                     },
                     "measurement_directory":{
-                        "HPGe": [
-                            "Zr_foil13_10Mar2026/UNFILTERED",
-                            "Zr_foil13_10Mar2026_count2/UNFILTERED"
+                        "NaI": [
+                            "Zirconium10_bottom_foils_bottom_count1/UNFILTERED",
+                            "Zirconium10_bottom_foils_bottom_count2/UNFILTERED"
                         ]
                     }
                 },
                 {
-                    "position": null,
+                    "position": "above_generator_bottom",
                     "material": "Zr",
-                    "designator": "Zirconium Packet #14",
-                    "irradiation_date": "11/19/2025",
-                    "number_of_foils": 2,
+                    "designator": "Zirconium Packet #9",
+                    "irradiation_date": "7/29/2026",
+                    "number_of_foils": 4,
                     "distance_to_source": {
-                        "value": 5,
+                        "value": 5.1,
                         "unit": "cm"
                     },
                     "mass": {
-                        "value": 0.2230,
+                        "value": 0.4462,
+                        "unit": "g"
+                    },
+                    "mass_err": {
+                        "value": 0.0003,
+                        "unit": "g"
+                    },
+                    "thickness": {
+                        "value": 0.02,
+                        "unit": "inch"
+                    },
+                    "measurement_directory":{
+                        "NaI": [
+                            "Zirconium9_top_foils_bottom_count1/UNFILTERED",
+                            "Zirconium9_top_foils_bottom_count2/UNFILTERED"
+                        ]
+                    }
+                },
+                {
+                    "position": "under_generator_top",
+                    "material": "Nb",
+                    "designator": "Niobium Packet #11",
+                    "irradiation_date": "7/29/2026",
+                    "number_of_foils": 4,
+                    "distance_to_source": {
+                        "value": 4.4,
+                        "unit": "cm"
+                    },
+                    "mass": {
+                        "value": 1.0829,
                         "unit": "g"
                     },
                     "mass_err": {
@@ -226,53 +255,53 @@
                         "unit": "g"
                     },
                     "thickness": {
-                        "value": 0.01,
+                        "value": 0.04,
                         "unit": "inch"
                     },
                     "measurement_directory":{
-                        "HPGe": [
-                            "Zr_foil14_10Mar2026/UNFILTERED",
-                            "Zr_foil14_10Mar2026_count2/UNFILTERED"
+                        "NaI": [
+                            "Niobium11_bottom_foils_top_count1/UNFILTERED",
+                            "Niobium11_bottom_foils_top_count2/UNFILTERED"
+                        ]
+                    }
+                },
+                {
+                    "position": "above_generator_top",
+                    "material": "Nb",
+                    "designator": "Niobium Packet #12",
+                    "irradiation_date": "7/29/2026",
+                    "number_of_foils": 4,
+                    "distance_to_source": {
+                        "value": 5.0,
+                        "unit": "cm"
+                    },
+                    "mass": {
+                        "value": 1.0944,
+                        "unit": "g"
+                    },
+                    "mass_err": {
+                        "value": 0.0001,
+                        "unit": "g"
+                    },
+                    "thickness": {
+                        "value": 0.04,
+                        "unit": "inch"
+                    },
+                    "measurement_directory":{
+                        "NaI": [
+                            "Niobium12_top_foils_top_count1/UNFILTERED",
+                            "Niobium12_top_foils_top_count2/UNFILTERED"
                         ]
                     }
                 }
             ],
             "background_directory": {
-                "HPGe": "bkgrd_14Mar26/UNFILTERED"
+                "NaI": "Background_count1/UNFILTERED"
             },
             "check_sources": {
-                "HPGe": {
-                    "Ba133 Count 1": {
-                        "directory": "Ba133_1_uCi_Mar14_Count1/UNFILTERED",
-                        "nuclide": "Ba133",
-                        "activity": {
-                            "value": 1.0,
-                        "unit": "uCi",
-                        "date": "2014-03-15"
-                        },
-                        "energies": null,
-                        "intensities": null,
-                        "half_life": {
-                            "value": null,
-                            "unit": null
-                        }
-                    },
-                    "Ba133 Count 2": {
-                        "directory": "Ba133_1_uCi_Mar14_Count2/UNFILTERED",
-                        "nuclide": "Ba133",
-                        "activity": {
-                            "value": 1.0,
-                            "unit": "uCi",
-                            "date": "2014-03-15"
-                        },
-                        "energies": null,
-                        "half_life": {
-                            "value": null,
-                            "unit": null
-                        }
-                    },
+                "NaI": {
                     "Co60 Count 1": {
-                        "directory": "Co60_0_872_uCi_19Mar14_Count1/UNFILTERED",
+                        "directory": "Co60_0_872uCi_19Mar2014_count1/UNFILTERED",
                         "nuclide": "Co60",
                         "activity": {
                             "value": 0.872,
@@ -287,7 +316,7 @@
                         }
                     },
                     "Co60 Count 2": {
-                        "directory": "Co60_0_872_uCi_19Mar14_Count2/UNFILTERED",
+                        "directory": "Co60_0_872uCi_19Mar2014_count2/UNFILTERED",
                         "nuclide": "Co60",
                         "activity": {
                             "value": 0.872,
@@ -302,7 +331,7 @@
                         }
                     },
                     "Cs137 Count 1": {
-                        "directory": "Cs137_9_38uCi_29Sep23_Count1/UNFILTERED",
+                        "directory": "Cs137_9_38uCi_29Sep2023_count1/UNFILTERED",
                         "nuclide": "Cs137",
                         "activity": {
                             "value": 9.38,
@@ -317,7 +346,7 @@
                         }
                     },
                     "Cs137 Count 2": {
-                        "directory": "Cs137_9_38uCi_29Sep23_Count2/UNFILTERED",
+                        "directory": "Cs137_9_38uCi_29Sep2023_count2/UNFILTERED",
                         "nuclide": "Cs137",
                         "activity": {
                             "value": 9.38,
@@ -332,7 +361,7 @@
                         }
                     },
                     "Na22 Count 1": {
-                        "directory": "Na22_9_98uCi_29Sep23_Count1/UNFILTERED",
+                        "directory": "Na22_9_98uCi_29Sep2023_count1/UNFILTERED",
                         "nuclide": "Na22",
                         "activity": {
                             "value": 9.98,
@@ -347,12 +376,42 @@
                         }
                     },
                     "Na22 Count 2": {
-                        "directory": "Na22_9_98uCi_29Sep23_Count2/UNFILTERED",
+                        "directory": "Na22_9_98uCi_29Sep2023_count2/UNFILTERED",
                         "nuclide": "Na22",
                         "activity": {
                             "value": 9.98,
                             "unit": "uCi",
                             "date": "2023-09-29"
+                        },
+                        "energies": null,
+                        "intensities": null,
+                        "half_life": {
+                            "value": null,
+                            "unit": null
+                        }
+                    },
+                    "Mn54 Count 1": {
+                        "directory": "Mn54_6_27uCi_2May2016_count1/UNFILTERED",
+                        "nuclide": "Mn54",
+                        "activity": {
+                            "value": 6.27,
+                            "unit": "uCi",
+                            "date": "2016-05-02"
+                        },
+                        "energies": null,
+                        "intensities": null,
+                        "half_life": {
+                            "value": null,
+                            "unit": null
+                        }
+                    },
+                    "Mn54 Count 2": {
+                        "directory": "Mn54_6_27uCi_2May2016_count2/UNFILTERED",
+                        "nuclide": "Mn54",
+                        "activity": {
+                            "value": 6.27,
+                            "unit": "uCi",
+                            "date": "2016-05-02"
                         },
                         "energies": null,
                         "intensities": null,

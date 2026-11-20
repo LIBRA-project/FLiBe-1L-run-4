@@ -160,3 +160,9 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# Zone Identifiers from transferred files
+*Zone.Identifier
+
+# Specific to FLiBe-1L-run-4
+data/neutron_detection/activation_foils/260729_1L_FLiBe_run4_foils/
